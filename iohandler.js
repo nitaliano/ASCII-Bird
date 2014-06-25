@@ -19,7 +19,7 @@ IOHandler.prototype.getInput = function (cb) {
     	output: process.stdout
   	});
 
-	this.rl.question('Enter 0-4 to move or 5 to quit - ', function (state) {
+	this.rl.question('Enter 1, and 2 to move or 0 to quit - ', function (state) {
 		if (state < 0 || state > 5) {
 			self.state = self.kill;
 			return;
